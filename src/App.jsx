@@ -25,8 +25,8 @@ function App() {
     if(count > 5){
       setBrash(brash+1);
      }
-  },[count]); 
-
+  },[count]);
+  
   return (
     <>
      {count}
