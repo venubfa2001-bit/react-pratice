@@ -1,6 +1,7 @@
 import React, { useState, useEffect, Suspense } from 'react';
 import {countHandler, UserContext} from './utlis';
 import Child from './components/Child';
+import Pratice from './components/Pratice';
 
 const Popup = React.lazy(()=> import("./components/Popup"));
 
@@ -42,6 +43,7 @@ function App() {
       <Popup />
      </Suspense>)}
      <button onClick={()=> setDisplayPopup(true)}>Popup</button>
+     <Pratice />
     </>
   )
 }
